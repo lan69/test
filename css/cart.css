@@ -1,0 +1,215 @@
+/* 顶部部分 */
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #131313;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.header img {
+    width: 203px;
+    height: 51px;
+}
+
+.header .headerbox2 .aaaa {
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    color: #fff;
+}
+
+.vip {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.vip span {
+    padding-left: 10px;
+    color: pink;
+}
+
+
+/* 回到顶部按钮 */
+
+.runtop {
+    width: 50px;
+    height: 55px;
+    position: fixed;
+    top: 500px;
+    right: 30px;
+    display: none;
+    z-index: 10;
+}
+
+
+/* 底部导航部分 */
+
+.icon-mail {
+    background-position: -179px -336px;
+    width: 21px;
+    height: 16px;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #000;
+}
+
+.footerbox {
+    padding: 54px 0;
+    color: #fff;
+}
+
+.footerbox ul {
+    padding: 0 15px 0 150px;
+    width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.footerbox ul li {
+    width: 20%;
+}
+
+.footerbox li a,
+.footerbox li p {
+    display: block;
+    color: #999;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.footer-select {
+    position: relative;
+    color: #fff;
+    padding: 0 245px 0 130px;
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.footer-select-item {
+    float: right;
+    width: 100%;
+}
+
+.icon-mail {
+    background-position: -179px -336px;
+    width: 21px;
+    height: 16px;
+}
+
+.form-input {
+    position: relative;
+    width: 234px;
+}
+
+.form-input input {
+    background: 0 0;
+    border: 1px solid #b3b3b3;
+    font-size: 14px;
+    color: #999;
+    width: 100%;
+    height: 30px;
+    padding: 3px 57px 4px 12px;
+}
+
+.footer-select .form-input button {
+    position: absolute;
+    right: 0;
+    top: 27px;
+    background: 0 0;
+    width: 54px;
+    height: 20px;
+    color: #fff;
+    font-size: 14px;
+    border: 0;
+    border-left: 1px solid #b3b3b3;
+    cursor: pointer;
+}
+
+.icon-footer-weixin {
+    background-position: -230px -301px;
+    width: 18px;
+    height: 14px;
+}
+
+.icon-footer-weibo {
+    background-position: -206px -301px;
+    width: 18px;
+    height: 14px;
+}
+
+
+/* .footer-weixin-img {
+            position: absolute;
+            top: 15px;
+            right: 75px;
+            display: none;
+        } */
+
+.footer-container {
+    background-color: #fff;
+    text-align: center;
+}
+
+.footer-containerbox {
+    padding: 30px;
+}
+
+.footer-containerbox p:nth-child(1),
+.footer-containerbox p:nth-child(2) {
+    font-size: 12px
+}
+
+.footer-containerbox p:nth-child(3) {
+    font-size: 12px;
+    color: #999;
+    padding-top: 20px;
+}
+
+.footer-containerbox p:nth-child(4) {
+    font-size: 12px;
+    color: #999;
+}
+
+.icon-footer-zggs {
+    background-position: -379px -267px;
+    width: 17px;
+    height: 17px;
+}
+
+.icon-footer-hgyab {
+    background-position: -292px -265px;
+    width: 18px;
+    height: 20px;
+}
+
+
+/* 老师的已经删了 */
+
+.footer {
+    position: static;
+}
+
+.cart table tbody tr td,
+.cart table tfoot tr td,
+.cart table thead tr td {
+    vertical-align: middle;
+}
+
+.cart .number input {
+    height: 34px;
+    width: 60px;
+    padding-left: 8px;
+    outline: none;
+}

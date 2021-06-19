@@ -1,0 +1,442 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>列表页</title>
+    <!-- 禁止检查当前域名 -->
+    <meta name="referrer" content="never">
+    <!-- 网站图标 -->
+    <link rel="shortcut icon" href="./img/1/ia_100000001090.ico" type="image/x-icon" />
+    <!-- 初始化css文件：用来将所有浏览器中显示不一样的样式，变的一样 -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 当前文件的css -->
+    <link rel="stylesheet" href="./css/list.css?b=4">
+    <!-- 引入js的库 -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="./js/jquery-3.5.1.min.js"></script> -->
+    <!-- 引入bootstrap.js，bootstrap的js需要依赖一个js库 -->
+    <script src="./js/bootstrap.js"></script>
+    <!-- 引入cookie的js -->
+    <script src="./js/cookie.js"></script>
+    <script src="./js/layer/layer.js"></script>
+    <!-- <script src="./js/ajax.js"></script> -->
+    <script src="./js/checkLogin.js"></script>
+    <script src="./js/page.js"></script>
+    <!-- <script src="./js/list.js"></script> -->
+
+</head>
+
+<body>
+    <!-- 顶部 -->
+
+    <div class="headerbigbox">
+        <div class="headerbox">
+            <header class="header">
+                <div class="header-container">
+                    <div class="header-content clearfix">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="./img/2/ia_100000001.png" alt="兰蔻官方商城" title="兰蔻官方商城">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav-content clearfix">
+                        <div class="logo2 animated zoomIn">
+                            <a href="#"><img src="./img/2/ia_100000001.png" width="100px" alt="兰蔻官方商城" title="兰蔻官方商城"></a>
+                        </div>
+                        <div class="nav-wrap">
+                            <ul class="nav-item">
+                                <li>
+                                    <a href="#"> <span>首页</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>护肤</span></a>
+                                    <ul class="ul">
+                                        <li>
+                                            <ol>
+                                                <li class="tou">产品类型</li>
+                                                <li>卸妆&洁面</li>
+                                                <li>美容液&爽肤水</li>
+                                                <li>精华</li>
+                                                <li>眼部护理</li>
+                                                <li>乳液</li>
+                                                <li>面霜</li>
+                                                <li>防晒隔离</li>
+                                            </ol>
+
+                                        </li>
+                                        <li>
+                                            <ol>
+                                                <li class="tou">产品系列</li>
+                                                <li>清莹清洁系列</li>
+                                                <li>小黑瓶系列</li>
+                                                <li>菁纯系列</li>
+                                                <li>净澈换肤系列</li>
+                                                <li>清透防晒系列</li>
+                                                <li>素颜系列</li>
+                                                <li>水份缘系列</li>
+                                                <li>男士系列</li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <ol>
+                                                <li class="tou">肌肤需求</li>
+                                                <li>卸妆清洁</li>
+                                                <li>舒缓保湿</li>
+                                                <li>精华修护</li>
+                                                <li>净澈换肤</li>
+                                                <li>美白淡斑</li>
+                                                <li>紧致提拉</li>
+                                                <li>抗老愈颜</li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <img src="./img/1/ia_100003860.jpg" alt="">
+                                            <p>抛光 净澈 透亮</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span>彩妆</span></a>
+                                    <ul class="ul">
+                                        <li>
+                                            <ol>
+                                                <li class="tou">底妆</li>
+                                                <li>妆前乳</li>
+                                                <li>气垫霜</li>
+                                                <li>粉底</li>
+                                                <li>蜜粉&散粉</li>
+                                                <li>修容遮瑕</li>
+                                                <li>晒红</li>
+
+                                            </ol>
+
+                                        </li>
+                                        <li>
+                                            <ol>
+                                                <li class="tou">唇妆</li>
+                                                <li>唇膏</li>
+                                                <li>唇釉</li>
+
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <ol>
+                                                <li class="tou">眼妆</li>
+                                                <li>睫毛膏</li>
+                                                <li>眼线笔</li>
+                                                <li>眉部</li>
+
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <img src="./img/1/ia_100003896.jpg" alt="">
+                                            <p>持妆透气不假面</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span>香水</span></a>
+                                    <ul class="ul">
+                                        <li>
+                                            <ol>
+                                                <li class="tou">女士香水</li>
+                                                <li>美丽人生系列</li>
+                                                <li>奇迹系列</li>
+                                                <li>珍爱系列</li>
+                                                <li>殿堂系列</li>
+
+                                            </ol>
+
+                                        </li>
+
+
+                                        <li>
+                                            <img src="./img/1/ia_100003897.jpg" alt="">
+                                            <p>快乐因你而生</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.lancome.com.cn/miaosha-suit"><span>618限时秒杀<span class="tag">HOT</span></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.lancome.com.cn/hotsales"><span>必囤套装<span class="tag">HOT</span></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.lancome.com.cn/landingpage/kimpure-page"><span>菁纯奢宠<span class="tag">HOT</span></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.lancome.com.cn/item/LAN00829"><span>尝鲜礼盒<span class="tag">HOT</span></span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>试用中心</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>会员中心</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="functional-area">
+                            <div class="right">
+                                <ul>
+                                    <li class="nav-search">
+                                        <a href="#"><i class="icon icon-header-search-white"></i></a>
+                                    </li>
+                                    <li class="header-shopping-bag">
+                                        <a href="car.html"><i class="icon icon-header-cart"></i></a>
+                                    </li>
+                                    <li class="header-login">
+                                        <a href="index.html"><i class="icon icon-header-logins"></i></a>
+                                    </li>
+                                    <li><a href="index.html" class="aaaa">登录</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <!-- 广告 -->
+    <div class="banner">
+        <div class="banner-img">
+            <a href="list.html"><img src="./img/1/ia_100003951.jpg" alt=""></a>
+        </div>
+    </div>
+    <!-- 景点列表 -->
+    <div class="wrap" id="scenics">
+        <div class="content">
+            <h1>限时秒杀<small>所有产品</small></h1>
+            <div class="container fluid">
+                <div class="row scenics">
+
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="http://5b0988e595225.cdn.sohucs.com/images/20171222/014e9fc392984995bb10bf8b40385bb0.jpeg" alt="...">
+                        <div class="caption">
+                            <h3>颐和园</h3>
+                            <p>阿斯顿发斯蒂芬阿斯蒂芬</p>
+                            <p>
+                                <a href="#" class="btn btn-default" role="button">查看详情</a>
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page"></div>
+    <!-- 返回顶部 -->
+    <p class="runtop">
+        <img src="./img/2/ia_100000075.png" alt="">
+    </p>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footerbox">
+            <ul>
+                <li>关于我们
+                    <div>
+                        <a href="#">加入兰蔻</a>
+                        <a href="#">会员中心</a>
+                    </div>
+                </li>
+                <li>联系我们
+                    <div>
+                        <a href="#">线上美容顾问</a>
+                        <p>客服热线：400-820-8016</p>
+                    </div>
+
+                </li>
+                <li>配送及退货</li>
+                <li>专柜查询</li>
+                <li>关注我们
+                    <div>
+                        <a href="javaScript:;" class="icon-footer-w"> <i class="icon icon-footer-weixin"></i> 官方微信</a>
+                        <a href="#"> <i class="icon icon-footer-weibo"></i> 官方微博</a>
+                    </div>
+                    <!-- <div class="footer-weixin-img">
+                        <img src="./img/2/ia_100000077.png" alt="">
+                    </div> -->
+                </li>
+
+            </ul>
+            <div class="footer-select">
+                <div class="footer-select-item">
+                    <i class="icon icon-mail"></i>
+                    <span>电子邮件</span>
+                </div>
+                <div class="form-input">
+                    <input type="text" placeholder="*请输入您的邮箱">
+                    <button class="footer-btn2">确认</button>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="footer-container">
+            <div class="footer-containerbox">
+                <p>国家药监局提示您：宣称用于祛斑美白、防晒、染发、烫发等的化妆品为特殊用途化妆品，产品标签上应标注“国妆特字”或者“国妆特进字”的标准文号。</p>
+                <p>© L’Oreal China 欧莱雅（中国）有限公司版权所有 <i class="icon icon-footer-zggs"></i> 中国工商 沪ICP备08100043号-34 <i class="icon  icon-footer-hgyab"></i> 沪公网安备 31010602001526号</p>
+                <p>使用条款 Cookies政策 隐私政策</p>
+                <p>浏览该网站表示您接受并同意我们使 用cookies为您提供个性化的浏览体验。点击Cookies政策了解详情</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+
+                var loadindex = layer.load(1, {
+                    shade: [0.5, '#333']
+                })
+                $.ajax({
+                        url: 'list.php',
+                        dataType: 'json',
+                        success(res) {
+                            var {
+                                data
+                            } = res;
+
+                            //   data.reverse()
+                            var pageSize = 4;
+                            new Page("page", {
+                                language: {
+                                    first: '首页',
+                                    prev: '上一页',
+                                    next: '下一页',
+                                    last: '尾页'
+                                },
+                                pageData: {
+                                    pageSize,
+                                    total: data.length
+                                },
+                                show: function(currentPage) {
+                                    var tmp = data.slice((currentPage - 1) * pageSize, currentPage * pageSize)
+                                    var html = '';
+                                    tmp.forEach(v => {
+                                        html += `
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="thumbnail">
+                          <img src="${v.imgpath}" alt="...">
+                          <div class="caption">
+                              <h3>${v.name}</h3>
+                              <p class="introduce">${v.introduce}/</p>
+                              <p>
+                                  <a href="detail.html?id=${v.id}" class="btn btn-default" role="button">查看详情</a>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              `
+                                    })
+                                    $('.scenics').html(html)
+                                }
+                            })
+                            layer.close(loadindex)
+                        }
+                    })
+                    // 登录退出
+                var username = getCookie('username');
+                var login = document.querySelector('.aaaa');
+                if (username) {
+                    var str = `<li><a style="color: pink;">欢迎<span>${username}</span></a></li>
+    <li><a href="javascript:;" class="logout" style="color: #fff;">退出</a></li>`;
+
+                    login.innerHTML = str;
+                    // 退出功能
+                    var logout = document.querySelector('.logout');
+                    logout.onclick = function() {
+                        layer.confirm('你确定要退出吗？', {
+                                btn: ['确定', '取消']
+                            },
+                            function() {
+                                // 删除cookie
+                                delCookie('username');
+                                login.innerHTML = `<li><a href="index.html">登陆</a></li>
+        <li><a href="register.html">注册</a></li>`;
+                                layer.msg('退出成功', {
+                                    icon: 1,
+                                    time: 500
+                                })
+                            },
+                            function() {
+                                layer.msg('已取消', {
+                                    icon: 1,
+                                    time: 500
+                                })
+                                return false;
+                            }
+                        )
+                    }
+                }
+                // 二级菜单
+                $(function() {
+                        $('.nav-item>li').hover(function() {
+                            // 鼠标移入
+                            $(this).find('ul').stop().slideDown(300)
+                        }, function() {
+                            // 鼠标移出
+                            $(this).find('ul').stop().slideUp(300)
+                        })
+                    })
+                    // 回到顶部按键
+                $(window).scroll(() => {
+                    // 通过判断卷去的高度来决定
+                    if ($(window).scrollTop() >= 300) {
+                        // 让回到顶部按钮显示
+                        $('.runtop').fadeIn()
+                    } else {
+                        // 让回到顶部按钮隐藏
+                        $('.runtop').fadeOut()
+                    }
+                })
+                $(".runtop").click(function() {
+                        var timer = setInterval(function() {
+                            // 定时器中获取 当前滚动的距离
+                            var t = $(window).scrollTop();
+                            t -= 100;
+                            if (t <= 0) {
+                                clearInterval(timer)
+                            }
+                            // 将滚动距离依次减少赋值
+                            $(window).scrollTop(t)
+                        }, 50)
+                    })
+                    // 滚动条滚动触发顶部显示隐藏效果
+                $(window).scroll(() => {
+                    // 通过判断卷去的高度来决定
+
+                    if ($(window).scrollTop() >= 100) {
+                        $('.header-content').css('display', 'none')
+                        $('.headerbox').css('background', 'black').fadeIn()
+                        $('.logo2').css('display', 'block')
+
+
+                    } else {
+                        $('.header-content').css('display', 'block')
+
+                    }
+                    if ($(window).scrollTop() == 0) {
+                        // $('.headerbox').css('background', 'none').fadeIn()
+                        $('.logo2').css('display', 'none')
+                        $('.headerbox').css('background', 'black')
+
+                    }
+                })
+            }
+            // })
+    </script>
+</body>
+
+</html>

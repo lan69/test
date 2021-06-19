@@ -1,0 +1,91 @@
+/* 公共样式 */
+
+body,
+span,
+input,
+img,
+a,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+h1,
+h2,
+h4,
+h3,
+h5,
+h6,
+div,
+form,
+table,
+tr,
+td,
+th,
+b,
+strong,
+i,
+em,
+select {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.body {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #000;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+}

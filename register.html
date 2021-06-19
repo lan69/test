@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/1/ia_100000001090.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="./js/ajax.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-top">
+            <p>兰蔻会员欢迎您，注册享积分，登录享礼遇</p>
+        </div>
+        <h2>注册</h2>
+        <form action="./register.php" method="POST" onsubmit="return isRemeber()">
+            用户名: <input type="text" name="username" class="inp" placeholder="用户名" /><br/> 密码: <input type="text" name="password" class="pad" placeholder="请填写6-12位数密码" />
+            <!-- 确认密码：<input type="text" name="" id=""> -->
+            <button>立即注册</button>
+            <div>如已注册，请直接<a href="./index.html">登录</a></div>
+        </form>
+    </div>
+
+</body>
+
+</html>
+<script>
+    // function isUsername(str) {
+    //     var reg = /^[\u4E00-\u9FA5A-Za-z0-9]{2,6}$/
+    //     return reg.test(str)
+    // }
+    // var InpUser = document.querySelector('.inp');
+    // var pad = document.querySelector('.pad');
+
+
+    function isRemeber() {
+        // 用户名正则，4到16位（字母，数字，下划线,中文）
+        var username = /^[\u4E00-\u9FA5A-Za-z0-9]{1,6}$/;
+        // 密码长度要大于6位，由数字和字母组成
+        var password = /^(\w{6,12})$/g;
+        var username1 = document.querySelector('.inp').value;
+        var password1 = document.querySelector('.pad').value;
+        if (username.test(username1) && password.test(password1)) {
+            return true;
+        } else {
+            alert('用户名或密码不符合规范，请重新填写')
+                //保存用户密码
+            return false;
+        }
+
+    }
+</script>

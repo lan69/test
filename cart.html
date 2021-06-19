@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>购物车页</title>
+    <!-- 禁止检查当前域名 -->
+    <meta name="referrer" content="never">
+    <!-- 网站图标 -->
+    <link rel="shortcut icon" href="./img/1/ia_100000001090.ico" type="image/x-icon" />
+    <!-- 初始化css文件：用来将所有浏览器中显示不一样的样式，变的一样 -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 当前文件的css -->
+    <link rel="stylesheet" href="./css/cart.css">
+    <!-- 引入js的库 -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- 引入bootstrap.js，bootstrap的js需要依赖一个js库 -->
+    <script src="./js/bootstrap.js"></script>
+    <!-- 引入cookie的js -->
+    <script src="./js/cookie.js"></script>
+    <script src="./js/layer/layer.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/cart.js"></script>
+
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="header">
+        <div class="headerbox"><img src="./img/3/ia_100000001.png" alt=""></div>
+        <div class="headerbox2"><a href="index.html" class="aaaa">登录</a></div>
+    </div>
+    <!-- 面包屑 -->
+    <div class="wrap">
+        <div class="content">
+            <ol class="breadcrumb">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="list.html">列表页</a></li>
+                <li><a href="javascript:history.back();">详情页</a></li>
+                <li class="active">购物车页</li>
+            </ol>
+        </div>
+    </div>
+    <!-- 购物车列表 -->
+    <div class="wrap cart">
+        <div class="content">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" name="selectAll"></th>
+                        <th>商品图片</th>
+                        <th>商品名称</th>
+                        <th>商品价格</th>
+                        <th>商品数量</th>
+                        <th>小计</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <td><input type="checkbox" name="selectAll"></td>
+                        <td colspan="2">商品总数：<span class="totalNum">0</span></td>
+                        <td colspan="2">商品总价：<span class="totalPrice">0</span></td>
+                        <td><a class="btn btn-primary" href="list.html">回列表页</a></td>
+                        <td><a class="btn btn-warning" href="order.html">去结算</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <!-- 返回顶部 -->
+    <p class="runtop">
+        <img src="./img/2/ia_100000075.png" alt="">
+    </p>
+    <!-- 底部导航部分 -->
+    <div class="footer">
+        <div class="footerbox">
+            <ul>
+                <li>关于我们
+                    <div>
+                        <a href="#">加入兰蔻</a>
+                        <a href="#">会员中心</a>
+                    </div>
+                </li>
+                <li>联系我们
+                    <div>
+                        <a href="#">线上美容顾问</a>
+                        <p>客服热线：400-820-8016</p>
+                    </div>
+
+                </li>
+                <li>配送及退货</li>
+                <li>专柜查询</li>
+                <li>关注我们
+                    <div>
+                        <a href="javaScript:;" class="icon-footer-w"> <i class="icon icon-footer-weixin"></i> 官方微信</a>
+                        <a href="#"> <i class="icon icon-footer-weibo"></i> 官方微博</a>
+                    </div>
+                    <div class="footer-weixin-img">
+                        <img src="./img/2/ia_100000077.png" alt="">
+                    </div>
+                </li>
+
+            </ul>
+            <div class="footer-select">
+                <div class="footer-select-item">
+                    <i class="icon icon-mail"></i>
+                    <span>电子邮件</span>
+                </div>
+                <div class="form-input">
+                    <input type="text" placeholder="*请输入您的邮箱">
+                    <button class="footer-btn2">确认</button>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="footer-container">
+            <div class="footer-containerbox">
+                <p>国家药监局提示您：宣称用于祛斑美白、防晒、染发、烫发等的化妆品为特殊用途化妆品，产品标签上应标注“国妆特字”或者“国妆特进字”的标准文号。</p>
+                <p>© L’Oreal China 欧莱雅（中国）有限公司版权所有 <i class="icon icon-footer-zggs"></i> 中国工商 沪ICP备08100043号-34 <i class="icon  icon-footer-hgyab"></i> 沪公网安备 31010602001526号</p>
+                <p>使用条款 Cookies政策 隐私政策</p>
+                <p>浏览该网站表示您接受并同意我们使 用cookies为您提供个性化的浏览体验。点击Cookies政策了解详情</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
